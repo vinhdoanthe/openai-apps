@@ -1,0 +1,22 @@
+<div id="<%= dom_id team %>">
+  <p>
+    <strong>Name:</strong>
+    <%= team.name %>
+  </p>
+
+  <p>
+    <strong>Team type:</strong>
+    <%= team.team_type %>
+  </p>
+
+  <p>
+    <strong>Logo:</strong>
+    <%= link_to team.logo.filename, team.logo if team.logo.attached? %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= team.description %>
+  </p>
+
+</div>
